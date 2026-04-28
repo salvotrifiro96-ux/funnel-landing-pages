@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ImprenditorI.A. — Workshop Gratuito 15-18 Giugno</title>
-<meta name="description" content="4 giorni live per usare l'AI nel tuo business: automatizza, recupera tempo, moltiplica il fatturato senza assumere. Iscrizione gratuita.">
+<meta name="description" content="4 giorni online per usare l'AI nel tuo business: automatizza, vendi di più, recupera tempo. Iscrizione gratuita, posti limitati.">
 <meta property="og:title" content="ImprenditorI.A. — Workshop Gratuito 15-18 Giugno">
-<meta property="og:description" content="4 giorni live per usare l'AI nel tuo business: automatizza, recupera tempo, moltiplica il fatturato senza assumere. Iscrizione gratuita.">
+<meta property="og:description" content="4 giorni online per usare l'AI nel tuo business: automatizza, vendi di più, recupera tempo. Iscrizione gratuita, posti limitati.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -19,7 +19,7 @@
         colors: {
           'brand-primary': '#0A2540',
           'brand-secondary': '#F4A261',
-          'brand-accent': '#E76F51',
+          'brand-accent': '#1ad809',
         },
         fontFamily: {
           sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -29,438 +29,498 @@
   }
 </script>
 <style>
-  body { font-family: 'Inter', system-ui, sans-serif; }
-  .bg-grid {
-    background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  body { font-family: 'Inter', sans-serif; }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
     background-size: 48px 48px;
   }
-  .gradient-text {
-    background: linear-gradient(90deg, #F4A261 0%, #E76F51 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  .glow {
+    box-shadow: 0 0 0 1px rgba(244,162,97,0.2), 0 20px 60px -20px rgba(244,162,97,0.4);
   }
-  details[open] summary .plus-icon { transform: rotate(45deg); }
-  .plus-icon { transition: transform .2s ease; }
+  details[open] summary .chev { transform: rotate(180deg); }
+  .chev { transition: transform .2s ease; }
 </style>
 </head>
 <body class="bg-white text-brand-primary antialiased">
 
-<!-- TOP BAR -->
-<div class="bg-brand-primary text-white text-center text-xs sm:text-sm py-2 px-4">
-  <span class="font-medium">Workshop online gratuito · 15–18 Giugno 2026 · Posti limitati a 1.000 partecipanti live</span>
+<!-- Top bar -->
+<div class="bg-brand-primary text-white text-center text-xs sm:text-sm py-2 px-4 font-medium">
+  <span class="inline-block w-2 h-2 rounded-full bg-brand-accent animate-pulse mr-2 align-middle"></span>
+  Workshop online gratuito · 15-18 Giugno 2026 · Posti limitati a 1.000
 </div>
 
 <!-- HERO -->
-<section class="relative bg-brand-primary text-white overflow-hidden">
-  <div class="absolute inset-0 bg-grid opacity-60"></div>
-  <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-accent/20 blur-3xl"></div>
-  <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-brand-secondary/20 blur-3xl"></div>
+<header class="relative bg-brand-primary text-white overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-secondary/20 blur-3xl"></div>
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-brand-accent/10 blur-3xl"></div>
 
-  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-12 pb-16 lg:pt-20 lg:pb-24">
-    <div class="grid lg:grid-cols-2 gap-12 items-start">
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-8 pt-12 pb-16 lg:pt-20 lg:pb-24">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
-      <!-- LEFT: copy -->
-      <div>
-        <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs sm:text-sm mb-6">
-          <span class="w-2 h-2 rounded-full bg-brand-secondary animate-pulse"></span>
-          <span>Workshop live gratuito · 4 giorni</span>
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs sm:text-sm font-medium mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+          Workshop gratuito · 4 giorni · Online
         </div>
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight mb-6">
-          Usa l'<span class="gradient-text">Intelligenza Artificiale</span> per moltiplicare il fatturato senza assumere nessuno.
+        <h1 class="font-extrabold tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
+          Usa l'<span class="text-brand-secondary">Intelligenza Artificiale</span> per moltiplicare il fatturato della tua azienda — senza assumere nessuno.
         </h1>
 
-        <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-xl">
-          In 4 giorni ti mostriamo, in diretta e con casi reali, come gli imprenditori italiani stanno automatizzando documenti, marketing e processi — recuperando ore di lavoro ogni settimana.
+        <p class="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl leading-relaxed">
+          4 giorni di workshop pratico, dal vivo, per imprenditori e liberi professionisti italiani. Ti mostriamo passo-passo come automatizzare il lavoro che oggi ti ruba ore e come trasformare l'AI in vendite reali.
         </p>
 
-        <ul class="space-y-3 mb-10">
+        <ul class="mt-8 space-y-3 text-white/90">
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-brand-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span class="text-white/90"><strong class="text-white">15–16 Giugno:</strong> i sistemi AI che eliminano il lavoro manuale (documenti, preventivi, email).</span>
+            <svg class="w-5 h-5 mt-1 text-brand-accent flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 111.4-1.4L8.5 12l6.8-6.7a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+            <span>Documenti, preventivi, email, report: <strong>fino al 70% del lavoro ripetitivo automatizzato</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-brand-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span class="text-white/90"><strong class="text-white">17 Giugno:</strong> il percorso operativo per integrare l'AI nella tua attività in 90 giorni.</span>
+            <svg class="w-5 h-5 mt-1 text-brand-accent flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 111.4-1.4L8.5 12l6.8-6.7a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+            <span>Marketing online che funziona davvero: sito, ads, contenuti <strong>fatti dall'AI sotto la tua regia</strong></span>
           </li>
           <li class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-brand-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span class="text-white/90"><strong class="text-white">18 Giugno:</strong> Q&A live — porti il tuo caso, lo risolviamo insieme.</span>
+            <svg class="w-5 h-5 mt-1 text-brand-accent flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 111.4-1.4L8.5 12l6.8-6.7a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+            <span>Caso reale, dimostrazione live, niente teoria: <strong>esci con un sistema da applicare lunedì mattina</strong></span>
           </li>
         </ul>
 
-        <div class="hidden lg:flex items-center gap-6 text-sm text-white/70">
+        <div class="mt-8 flex flex-wrap items-center gap-6 text-sm text-white/70">
           <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-brand-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
-            100% online, da casa o ufficio
+            <svg class="w-5 h-5 text-brand-secondary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            15-18 Giugno 2026
           </div>
           <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-brand-secondary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            Iscrizione gratuita
+            <svg class="w-5 h-5 text-brand-secondary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            21:00 · 90 minuti/sera
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-secondary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.5-4.5M9 14l-4.5 4.5M15 14l4.5 4.5M9 10L4.5 5.5"/></svg>
+            100% Online · Zoom
           </div>
         </div>
       </div>
 
-      <!-- RIGHT: form card -->
-      <div id="iscriviti" class="relative">
-        <div class="absolute -inset-1 bg-gradient-to-br from-brand-secondary to-brand-accent rounded-2xl blur opacity-40"></div>
-        <div class="relative bg-white text-brand-primary rounded-2xl shadow-2xl p-6 sm:p-8">
-          <div class="text-center mb-6">
-            <div class="inline-block bg-brand-accent/10 text-brand-accent text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-3">Prenota il tuo posto</div>
-            <h2 class="text-2xl sm:text-3xl font-bold leading-tight">Iscriviti gratis al workshop</h2>
-            <p class="text-sm text-brand-primary/70 mt-2">4 giorni live · 15–18 Giugno 2026 · Posti contati</p>
+      <!-- Form card -->
+      <div class="lg:col-span-5">
+        <div id="iscrizione" class="bg-white text-brand-primary rounded-2xl p-6 sm:p-8 glow scroll-mt-20">
+          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-secondary mb-2">
+            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            Iscrizione gratuita
           </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight mb-2">Prendi il tuo posto al workshop</h2>
+          <p class="text-sm text-brand-primary/70 mb-6">Inserisci i tuoi dati. Ti inviamo il link Zoom e il promemoria via email.</p>
 
-          <!-- HUBSPOT FORM -->
+          <!-- HubSpot form (verbatim) -->
           <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
           <script>
             hbspt.forms.create({
               portalId: "140603915",
-              formId: "4be684e9-1218-4244-8e86-42b7f9eebef8",
+              formId: "1848f800-d265-4213-9ebd-90e0505b52dd",
               region: "eu1"
             });
           </script>
 
-          <p class="text-xs text-brand-primary/60 mt-4 text-center">Ti invieremo solo il link al workshop e i materiali. Niente spam.</p>
+          <div class="mt-5 pt-5 border-t border-brand-primary/10 grid grid-cols-3 gap-3 text-center text-xs text-brand-primary/70">
+            <div>
+              <div class="font-extrabold text-brand-primary text-lg">100%</div>
+              Gratuito
+            </div>
+            <div>
+              <div class="font-extrabold text-brand-primary text-lg">4</div>
+              Sere live
+            </div>
+            <div>
+              <div class="font-extrabold text-brand-primary text-lg">0€</div>
+              Per sempre
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
-</section>
+</header>
 
-<!-- TRUST STRIP / PROBLEM HOOK -->
-<section class="bg-slate-50 border-y border-slate-200">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-12 lg:py-16">
-    <p class="text-xs font-semibold uppercase tracking-widest text-brand-accent text-center mb-4">Per chi è questo workshop</p>
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-10 max-w-3xl mx-auto leading-tight">
-      Se gestisci un'attività in Italia, una di queste due frasi probabilmente la pensi anche tu.
-    </h2>
-    <div class="grid md:grid-cols-2 gap-5 lg:gap-8">
-      <div class="bg-white border border-slate-200 rounded-xl p-6 lg:p-8">
-        <div class="text-brand-accent font-bold text-sm mb-3">PROFILO A · IMPRENDITORE</div>
-        <p class="text-lg lg:text-xl font-semibold leading-snug mb-3">"Passo le giornate a fare a mano cose che potrebbe fare un sistema."</p>
-        <p class="text-brand-primary/70 leading-relaxed">Preventivi, contratti, email, gestione ordini, report. Sai che dovresti delegare, ma assumere costa, formare richiede mesi e i margini si stringono.</p>
-      </div>
-      <div class="bg-white border border-slate-200 rounded-xl p-6 lg:p-8">
-        <div class="text-brand-accent font-bold text-sm mb-3">PROFILO B · LIBERO PROFESSIONISTA</div>
-        <p class="text-lg lg:text-xl font-semibold leading-snug mb-3">"Il mio lavoro lo so fare. Il marketing online no."</p>
-        <p class="text-brand-primary/70 leading-relaxed">Sito, contenuti, ads, posizionamento: ogni volta che ci provi perdi giorni e non vedi risultati. Pagare un'agenzia ogni mese non è sostenibile.</p>
-      </div>
+<!-- TRUST STRIP -->
+<section class="bg-white border-b border-brand-primary/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-8">
+    <p class="text-center text-xs uppercase tracking-widest text-brand-primary/50 font-semibold mb-4">Pensato per imprenditori e professionisti italiani</p>
+    <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm sm:text-base font-medium text-brand-primary/80">
+      <span>Artigiani &amp; PMI</span>
+      <span class="text-brand-primary/20">•</span>
+      <span>Studi professionali</span>
+      <span class="text-brand-primary/20">•</span>
+      <span>Liberi professionisti</span>
+      <span class="text-brand-primary/20">•</span>
+      <span>Commercianti</span>
+      <span class="text-brand-primary/20">•</span>
+      <span>Consulenti</span>
     </div>
   </div>
 </section>
 
-<!-- PROMISE / SOLUTION -->
-<section class="bg-white">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 lg:py-24">
-    <div class="max-w-3xl mx-auto text-center mb-14">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand-accent mb-3">Cosa cambia con l'AI</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] mb-6">
-        Un imprenditore con l'AI ben implementata fa il lavoro di un team intero.
+<!-- PROBLEM -->
+<section class="bg-slate-50 py-16 sm:py-24">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl">
+      <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">Il problema vero</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+        Lavori 12 ore al giorno e l'azienda non cresce. Non perché sbagli — perché stai facendo a mano cose che oggi può fare una macchina.
       </h2>
-      <p class="text-lg text-brand-primary/75 leading-relaxed">
-        Non parliamo di "ChatGPT che ti scrive un post". Parliamo di sistemi che producono documenti, gestiscono comunicazioni, scrivono campagne e seguono i clienti — mentre tu fai il tuo lavoro vero.
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5 mt-12">
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="w-10 h-10 rounded-lg bg-brand-primary/5 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-brand-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2a4 4 0 014-4h6m-6 6l3 3m0-6l-3 3"/></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Sei l'imprenditore tradizionale</h3>
+        <p class="text-brand-primary/70 leading-relaxed">Fatturi bene, hai clienti, hai esperienza. Ma passi ore a scrivere preventivi, rispondere email, controllare documenti, chiudere report. Vorresti un'altra persona, ma assumere costa e formare costa di più.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="w-10 h-10 rounded-lg bg-brand-primary/5 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-brand-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Sei il libero professionista</h3>
+        <p class="text-brand-primary/70 leading-relaxed">Sei bravo nel tuo mestiere, ma il marketing online ti blocca. Sito, contenuti, ads, posizionamento: ogni agenzia ti chiede 1.500€ al mese e i risultati non arrivano. Intanto i concorrenti ti superano online.</p>
+      </div>
+    </div>
+
+    <p class="mt-12 text-xl sm:text-2xl font-semibold text-brand-primary max-w-3xl">
+      Il risultato è lo stesso: <span class="bg-brand-secondary/30 px-1">tempo bruciato, marginalità che si assottiglia, energie che calano.</span> E intanto, fuori, qualcuno con metà della tua esperienza sta usando l'AI per andare 3 volte più veloce.
+    </p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="py-16 sm:py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl mb-14">
+      <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">La svolta</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+        ImprenditorI.A. è il metodo per portare l'AI dentro la tua azienda — anche se non hai mai aperto ChatGPT.
+      </h2>
+      <p class="mt-5 text-lg text-brand-primary/70 leading-relaxed">
+        Niente teoria, niente prompt da copiare a caso, niente tool del mese. In 4 sere ti mostriamo dal vivo come funziona, su un caso reale, e ti diamo gli strumenti operativi per replicarlo nella tua attività.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-5 lg:gap-6">
-      <div class="border border-slate-200 rounded-xl p-6 hover:border-brand-secondary transition">
-        <div class="w-12 h-12 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center mb-4">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-        <h3 class="text-xl font-bold mb-2">Recuperi 10–15 ore a settimana</h3>
-        <p class="text-brand-primary/70 leading-relaxed">Le attività ripetitive — email, preventivi, documenti — diventano flussi automatici che giri in pochi minuti.</p>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="rounded-xl p-7 bg-gradient-to-br from-brand-primary to-brand-primary/80 text-white">
+        <div class="text-5xl font-black text-brand-secondary mb-3">01</div>
+        <h3 class="font-bold text-xl mb-2">Automatizza</h3>
+        <p class="text-white/80 leading-relaxed">Documenti, preventivi, email, contratti, report: l'AI li produce in minuti, tu controlli e firmi. Recuperi 10-15 ore a settimana.</p>
       </div>
-      <div class="border border-slate-200 rounded-xl p-6 hover:border-brand-secondary transition">
-        <div class="w-12 h-12 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center mb-4">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-        </div>
-        <h3 class="text-xl font-bold mb-2">Moltiplichi il fatturato</h3>
-        <p class="text-brand-primary/70 leading-relaxed">Stesso team, più clienti gestiti, più offerte vendute, più tempo dedicato al business invece che all'operatività.</p>
+      <div class="rounded-xl p-7 bg-gradient-to-br from-brand-primary to-brand-primary/80 text-white">
+        <div class="text-5xl font-black text-brand-secondary mb-3">02</div>
+        <h3 class="font-bold text-xl mb-2">Vendi</h3>
+        <p class="text-white/80 leading-relaxed">Sito, landing page, post social, campagne ads: l'AI scrive e tu correggi. Il marketing online finalmente smette di essere un buco nero.</p>
       </div>
-      <div class="border border-slate-200 rounded-xl p-6 hover:border-brand-secondary transition">
-        <div class="w-12 h-12 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center mb-4">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-        </div>
-        <h3 class="text-xl font-bold mb-2">Senza assumere personale</h3>
-        <p class="text-brand-primary/70 leading-relaxed">Niente nuovi stipendi, niente formazione di mesi, niente turnover. L'AI lavora 24/7 al posto del lavoro a basso valore.</p>
+      <div class="rounded-xl p-7 bg-gradient-to-br from-brand-primary to-brand-primary/80 text-white">
+        <div class="text-5xl font-black text-brand-secondary mb-3">03</div>
+        <h3 class="font-bold text-xl mb-2">Cresci</h3>
+        <p class="text-white/80 leading-relaxed">Più tempo + più clienti + meno costi fissi = più margine. Non assumi: deleghi alla macchina i compiti giusti, al prezzo giusto.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 4 GIORNI -->
-<section class="bg-brand-primary text-white relative overflow-hidden">
-  <div class="absolute inset-0 bg-grid opacity-40"></div>
-  <div class="relative max-w-6xl mx-auto px-5 sm:px-8 py-16 lg:py-24">
-    <div class="max-w-3xl mx-auto text-center mb-14">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand-secondary mb-3">Il programma</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] mb-4">4 giorni live, dalle teorie ai risultati pratici</h2>
-      <p class="text-lg text-white/75">Ogni sera connettiti, prendi appunti, applica. Il giorno dopo vedi già la differenza.</p>
+<!-- AGENDA -->
+<section class="py-16 sm:py-24 bg-brand-primary text-white relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="relative max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl mb-14">
+      <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">Programma del workshop</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+        4 sere, dal vivo, 90 minuti ciascuna. Cosa impari ogni giorno.
+      </h2>
     </div>
 
-    <div class="space-y-4 lg:space-y-5">
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 lg:p-8 backdrop-blur">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-          <div class="flex-shrink-0 w-16 h-16 rounded-xl bg-brand-secondary text-brand-primary flex flex-col items-center justify-center font-extrabold">
-            <span class="text-xs leading-none">GIORNO</span>
-            <span class="text-2xl leading-none">1</span>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-xl lg:text-2xl font-bold mb-2">L'AI applicata al tuo business — i fondamenti che contano</h3>
-            <p class="text-white/75 leading-relaxed">Quali strumenti usare oggi, dove ti fanno guadagnare tempo da subito e dove invece sono solo rumore. Demo dal vivo.</p>
+    <div class="space-y-4">
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6 sm:p-7 hover:bg-white/10 transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-brand-secondary text-brand-primary text-xs font-bold">GIORNO 1</span>
+            <span class="text-white/60 text-sm">Lunedì 15 Giugno · 21:00</span>
           </div>
         </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2">Il nuovo paradigma: l'imprenditore con l'AI vince, l'imprenditore senza AI sparisce</h3>
+        <p class="text-white/75 leading-relaxed">Cosa è cambiato davvero negli ultimi 18 mesi, quali AI usare (e quali ignorare), e perché chi parte adesso ha un vantaggio che durerà 5 anni.</p>
       </div>
 
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 lg:p-8 backdrop-blur">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-          <div class="flex-shrink-0 w-16 h-16 rounded-xl bg-brand-secondary text-brand-primary flex flex-col items-center justify-center font-extrabold">
-            <span class="text-xs leading-none">GIORNO</span>
-            <span class="text-2xl leading-none">2</span>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-xl lg:text-2xl font-bold mb-2">Caso reale: smontiamo un'attività e la ricostruiamo con l'AI</h3>
-            <p class="text-white/75 leading-relaxed">Prendiamo un'attività vera — documenti, marketing, clienti — e mostriamo passo passo cosa diventa automatizzabile e come.</p>
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6 sm:p-7 hover:bg-white/10 transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-brand-secondary text-brand-primary text-xs font-bold">GIORNO 2</span>
+            <span class="text-white/60 text-sm">Martedì 16 Giugno · 21:00</span>
           </div>
         </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2">Caso reale: come abbiamo automatizzato un'azienda dalla A alla Z</h3>
+        <p class="text-white/75 leading-relaxed">Dimostrazione pratica dal vivo. Vediamo insieme un'attività concreta, identifichiamo i processi da automatizzare, e li costruiamo davanti ai tuoi occhi.</p>
       </div>
 
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 lg:p-8 backdrop-blur">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-          <div class="flex-shrink-0 w-16 h-16 rounded-xl bg-brand-secondary text-brand-primary flex flex-col items-center justify-center font-extrabold">
-            <span class="text-xs leading-none">GIORNO</span>
-            <span class="text-2xl leading-none">3</span>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-xl lg:text-2xl font-bold mb-2">Il percorso ImprenditorI.A. — come implementarlo nei prossimi 90 giorni</h3>
-            <p class="text-white/75 leading-relaxed">Ti mostriamo il sistema completo, i risultati che produce e come puoi adottarlo nella tua attività con affiancamento diretto.</p>
+      <div class="bg-white/5 backdrop-blur border border-brand-secondary/40 rounded-xl p-6 sm:p-7 hover:bg-white/10 transition relative">
+        <div class="absolute -top-3 right-6 px-2 py-1 rounded bg-brand-accent text-brand-primary text-[10px] font-black uppercase tracking-wider">Da non perdere</div>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-brand-secondary text-brand-primary text-xs font-bold">GIORNO 3</span>
+            <span class="text-white/60 text-sm">Mercoledì 17 Giugno · 21:00</span>
           </div>
         </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2">Il sistema completo: marketing, vendite, operations con l'AI</h3>
+        <p class="text-white/75 leading-relaxed">Mettiamo insieme i pezzi: come trasformare l'AI in un asset stabile della tua azienda. Presentiamo anche il percorso completo per chi vuole essere accompagnato passo-passo.</p>
       </div>
 
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 lg:p-8 backdrop-blur">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-          <div class="flex-shrink-0 w-16 h-16 rounded-xl bg-brand-accent text-white flex flex-col items-center justify-center font-extrabold">
-            <span class="text-xs leading-none">GIORNO</span>
-            <span class="text-2xl leading-none">4</span>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-xl lg:text-2xl font-bold mb-2">Q&A live — porti il tuo caso, ti rispondiamo</h3>
-            <p class="text-white/75 leading-relaxed">Sessione aperta. Tu fai la domanda sulla tua attività, noi ti diamo la risposta concreta e l'implementazione consigliata.</p>
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6 sm:p-7 hover:bg-white/10 transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-brand-secondary text-brand-primary text-xs font-bold">GIORNO 4</span>
+            <span class="text-white/60 text-sm">Giovedì 18 Giugno · 21:00</span>
           </div>
         </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2">Q&amp;A live: rispondiamo a tutte le tue domande</h3>
+        <p class="text-white/75 leading-relaxed">Microfono aperto. Porta il tuo caso, il tuo dubbio, il tuo settore. Lavoriamo insieme sulle situazioni reali dei partecipanti.</p>
       </div>
     </div>
 
     <div class="text-center mt-12">
-      <a href="#iscriviti" class="inline-flex items-center gap-2 bg-brand-secondary hover:bg-brand-accent transition text-brand-primary hover:text-white font-bold px-8 py-4 rounded-lg text-lg shadow-lg">
-        Prenota il mio posto gratuito
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      <a href="#iscrizione" class="inline-block px-8 py-4 rounded-xl bg-brand-secondary text-brand-primary font-bold text-lg hover:scale-105 transition">
+        Prenota il mio posto gratis →
       </a>
-      <p class="text-white/60 text-sm mt-3">Posti limitati a 1.000 partecipanti live.</p>
+      <p class="text-sm text-white/60 mt-3">Bastano 30 secondi. Nessuna carta richiesta.</p>
     </div>
   </div>
 </section>
 
 <!-- SPEAKERS -->
-<section class="bg-white">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 lg:py-24">
-    <div class="max-w-3xl mx-auto text-center mb-14">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand-accent mb-3">Chi conduce il workshop</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1]">Due voci, un metodo testato sul campo</h2>
+<section class="py-16 sm:py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="text-center mb-14 max-w-3xl mx-auto">
+      <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">Chi conduce il workshop</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+        Due voci, una sola direzione: l'impresa italiana che adotta l'AI per davvero.
+      </h2>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
-      <div class="bg-slate-50 rounded-2xl p-6 lg:p-8 border border-slate-200">
-        <div class="flex items-center gap-4 mb-5">
-          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-brand-primary to-brand-accent flex items-center justify-center text-white text-2xl font-extrabold flex-shrink-0">F</div>
-          <div>
-            <h3 class="text-xl font-bold">Il fondatore di ImprenditorI.A.</h3>
-            <p class="text-brand-accent text-sm font-semibold">Formatore & Imprenditore</p>
-          </div>
-        </div>
-        <p class="text-brand-primary/75 leading-relaxed">Ha costruito il metodo ImprenditorI.A. partendo da un problema concreto: come un imprenditore italiano — non un ingegnere della Silicon Valley — può portare l'AI dentro la propria attività e vedere risultati misurabili.</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-brand-primary/10 p-7 bg-gradient-to-br from-slate-50 to-white">
+        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-3xl font-black mb-5">F</div>
+        <h3 class="text-xl font-bold mb-1">Il Fondatore di ImprenditorI.A.</h3>
+        <p class="text-sm font-semibold text-brand-secondary mb-4">Ideatore del metodo</p>
+        <p class="text-brand-primary/70 leading-relaxed">Ha portato l'intelligenza artificiale dentro decine di aziende italiane: artigiani, studi, PMI. Insegna come trasformare ChatGPT da giocattolo a strumento di lavoro produttivo.</p>
       </div>
-
-      <div class="bg-slate-50 rounded-2xl p-6 lg:p-8 border border-slate-200">
-        <div class="flex items-center gap-4 mb-5">
-          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-brand-secondary to-brand-accent flex items-center justify-center text-white text-2xl font-extrabold flex-shrink-0">SS</div>
-          <div>
-            <h3 class="text-xl font-bold">Salvatore Scibetta</h3>
-            <p class="text-brand-accent text-sm font-semibold">Co-speaker & Strategist</p>
-          </div>
-        </div>
-        <p class="text-brand-primary/75 leading-relaxed">Specialista nella traduzione operativa: prende i sistemi AI complessi e li rende applicabili da chiunque, anche senza background tecnico. Già rodato in coppia con il fondatore in decine di sessioni live.</p>
+      <div class="rounded-2xl border border-brand-primary/10 p-7 bg-gradient-to-br from-slate-50 to-white">
+        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-secondary to-brand-primary flex items-center justify-center text-white text-3xl font-black mb-5">S</div>
+        <h3 class="text-xl font-bold mb-1">Salvatore Scibetta</h3>
+        <p class="text-sm font-semibold text-brand-secondary mb-4">Co-speaker · Strategia &amp; vendita</p>
+        <p class="text-brand-primary/70 leading-relaxed">Specialista nel tradurre la tecnologia in risultati commerciali concreti. La coppia funziona perché unisce il "come si fa" tecnico al "come si vende" pratico.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COSA OTTIENI -->
-<section class="bg-slate-50">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 lg:py-24">
-    <div class="max-w-3xl mx-auto text-center mb-12">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand-accent mb-3">Cosa porti a casa</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1]">A fine workshop avrai chiaro:</h2>
+<!-- OUTCOME / RESULTS -->
+<section class="py-16 sm:py-24 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl mb-14">
+      <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">Cosa ti porti a casa</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+        Alla fine delle 4 sere avrai una visione chiara, un metodo, e i primi automatismi pronti.
+      </h2>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-4 lg:gap-5 max-w-4xl mx-auto">
-      <div class="flex items-start gap-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center font-bold">1</div>
-        <p class="text-brand-primary/85 leading-relaxed"><strong>Quali processi della tua attività</strong> puoi automatizzare già da lunedì mattina.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="text-3xl font-black text-brand-accent mb-2">+10h</div>
+        <h3 class="font-bold mb-1">a settimana</h3>
+        <p class="text-sm text-brand-primary/70">Recuperate dai task ripetitivi che oggi fai a mano.</p>
       </div>
-      <div class="flex items-start gap-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center font-bold">2</div>
-        <p class="text-brand-primary/85 leading-relaxed"><strong>Quali strumenti AI scegliere</strong> e quali ignorare (la maggior parte sono distrazioni).</p>
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="text-3xl font-black text-brand-accent mb-2">3x</div>
+        <h3 class="font-bold mb-1">contenuti prodotti</h3>
+        <p class="text-sm text-brand-primary/70">Sito, social, email: produci di più senza copywriter.</p>
       </div>
-      <div class="flex items-start gap-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center font-bold">3</div>
-        <p class="text-brand-primary/85 leading-relaxed"><strong>Come gestire il marketing online</strong> (sito, ads, contenuti) senza dipendere da agenzie esterne.</p>
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="text-3xl font-black text-brand-accent mb-2">0€</div>
+        <h3 class="font-bold mb-1">in nuovi stipendi</h3>
+        <p class="text-sm text-brand-primary/70">Niente assunzioni: l'AI ti dà la leva che ti serve.</p>
       </div>
-      <div class="flex items-start gap-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center font-bold">4</div>
-        <p class="text-brand-primary/85 leading-relaxed"><strong>Una roadmap a 90 giorni</strong> per integrare l'AI senza stravolgere la tua attività.</p>
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="text-3xl font-black text-brand-accent mb-2">1</div>
+        <h3 class="font-bold mb-1">mappa operativa</h3>
+        <p class="text-sm text-brand-primary/70">Sai esattamente cosa automatizzare per primo nella tua azienda.</p>
       </div>
-      <div class="flex items-start gap-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center font-bold">5</div>
-        <p class="text-brand-primary/85 leading-relaxed"><strong>Gli errori più comuni</strong> che fanno gli imprenditori al primo approccio con l'AI — e come evitarli.</p>
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="text-3xl font-black text-brand-accent mb-2">∞</div>
+        <h3 class="font-bold mb-1">prompt pronti</h3>
+        <p class="text-sm text-brand-primary/70">Template testati, replicabili, già pronti per il tuo settore.</p>
       </div>
-      <div class="flex items-start gap-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200">
-        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-primary text-brand-secondary flex items-center justify-center font-bold">6</div>
-        <p class="text-brand-primary/85 leading-relaxed"><strong>La differenza concreta</strong> tra un imprenditore che usa l'AI come gadget e uno che la usa come leva di fatturato.</p>
+      <div class="bg-white rounded-xl p-6 border border-brand-primary/10">
+        <div class="text-3xl font-black text-brand-accent mb-2">100%</div>
+        <h3 class="font-bold mb-1">applicabile subito</h3>
+        <p class="text-sm text-brand-primary/70">Lunedì mattina puoi mettere a terra la prima automazione.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA SECONDARIA -->
-<section class="bg-white">
-  <div class="max-w-4xl mx-auto px-5 sm:px-8 py-16 lg:py-20">
-    <div class="relative bg-brand-primary rounded-3xl p-8 sm:p-12 lg:p-16 text-center text-white overflow-hidden">
-      <div class="absolute inset-0 bg-grid opacity-40"></div>
-      <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-brand-accent/30 blur-3xl"></div>
-      <div class="relative">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
-          Tra un anno l'AI nella tua attività ce l'avrai. <br class="hidden sm:block">La domanda è: <span class="gradient-text">l'avrai messa tu, o un tuo concorrente?</span>
-        </h2>
-        <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">L'iscrizione è gratuita. Il tempo per decidere, no.</p>
-        <a href="#iscriviti" class="inline-flex items-center gap-2 bg-brand-secondary hover:bg-brand-accent transition text-brand-primary hover:text-white font-bold px-8 py-4 rounded-lg text-lg shadow-xl">
-          Iscriviti gratis al workshop
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-        </a>
+<!-- FOR WHO -->
+<section class="py-16 sm:py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border-2 border-brand-accent p-7 bg-brand-accent/5">
+        <div class="flex items-center gap-2 text-brand-primary font-bold mb-4">
+          <svg class="w-6 h-6 text-brand-accent" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 111.4-1.4L8.5 12l6.8-6.7a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+          Questo workshop fa per te se…
+        </div>
+        <ul class="space-y-3 text-brand-primary/80">
+          <li>Hai un'attività già avviata e vuoi farla rendere di più senza assumere</li>
+          <li>Sei un libero professionista e il marketing online ti blocca</li>
+          <li>Vuoi capire l'AI in italiano, con esempi reali, non con tutorial americani</li>
+          <li>Sei pronto a presentarti per 4 sere e prendere appunti seri</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border-2 border-brand-primary/15 p-7 bg-slate-50">
+        <div class="flex items-center gap-2 text-brand-primary font-bold mb-4">
+          <svg class="w-6 h-6 text-brand-primary/40" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z" clip-rule="evenodd"/></svg>
+          Non fa per te se…
+        </div>
+        <ul class="space-y-3 text-brand-primary/60">
+          <li>Cerchi la "scorciatoia magica" da 10 minuti al giorno</li>
+          <li>Non hai un'attività e cerchi un lavoro nuovo</li>
+          <li>Vuoi solo ascoltare passivamente senza applicare nulla</li>
+          <li>Sei già un esperto di AI con 2 anni di pratica alle spalle</li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SECONDARY CTA -->
+<section class="py-16 sm:py-20 bg-gradient-to-br from-brand-primary via-brand-primary to-[#061829] text-white relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="absolute top-0 right-0 w-72 h-72 bg-brand-secondary/20 rounded-full blur-3xl"></div>
+  <div class="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+    <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-4">Posti limitati a 1.000</p>
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
+      L'iscrizione è gratuita. L'unico costo è non esserci.
+    </h2>
+    <p class="text-lg text-white/75 max-w-2xl mx-auto mb-8">
+      Tra due anni, le aziende italiane si divideranno in due gruppi: quelle che hanno integrato l'AI per tempo, e quelle che corrono dietro. Da che parte vuoi stare?
+    </p>
+    <a href="#iscrizione" class="inline-block px-8 py-4 rounded-xl bg-brand-secondary text-brand-primary font-bold text-lg hover:scale-105 transition shadow-xl">
+      Sì, voglio il mio posto al workshop →
+    </a>
+    <p class="text-sm text-white/50 mt-4">15-18 Giugno 2026 · Online · 100% gratuito</p>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="bg-slate-50">
-  <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 lg:py-24">
+<section class="py-16 sm:py-24 bg-white">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
     <div class="text-center mb-12">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand-accent mb-3">Domande frequenti</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1]">Le risposte alle domande che ci arrivano più spesso</h2>
+      <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">Domande frequenti</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Tutto quello che vuoi sapere prima di iscriverti</h2>
     </div>
 
     <div class="space-y-3">
-      <details class="group bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <summary class="flex items-center justify-between cursor-pointer p-5 lg:p-6 font-semibold text-lg list-none">
-          <span>Quanto costa il workshop?</span>
-          <span class="plus-icon text-brand-accent text-2xl font-light flex-shrink-0 ml-4">+</span>
+      <details class="group bg-slate-50 rounded-xl border border-brand-primary/10 overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-bold text-brand-primary list-none">
+          <span>Il workshop è davvero gratuito?</span>
+          <svg class="chev w-5 h-5 text-brand-secondary flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="px-5 lg:px-6 pb-5 lg:pb-6 text-brand-primary/75 leading-relaxed">
-          Il workshop è completamente gratuito. Nei 4 giorni riceverai contenuto formativo di valore reale. Al giorno 3 ti presenteremo il percorso ImprenditorI.A. per chi vuole approfondire — partecipare a quella parte è una tua libera scelta.
-        </div>
+        <div class="px-5 pb-5 text-brand-primary/75 leading-relaxed">Sì, completamente. 4 sere live di contenuto reale, senza carta di credito, senza trial. Al giorno 3 presentiamo anche il percorso completo per chi vuole essere accompagnato — ma è un'opzione, non un obbligo.</div>
       </details>
 
-      <details class="group bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <summary class="flex items-center justify-between cursor-pointer p-5 lg:p-6 font-semibold text-lg list-none">
-          <span>Devo essere "tecnico" per seguire?</span>
-          <span class="plus-icon text-brand-accent text-2xl font-light flex-shrink-0 ml-4">+</span>
+      <details class="group bg-slate-50 rounded-xl border border-brand-primary/10 overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-bold text-brand-primary list-none">
+          <span>Devo essere già pratico di tecnologia?</span>
+          <svg class="chev w-5 h-5 text-brand-secondary flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="px-5 lg:px-6 pb-5 lg:pb-6 text-brand-primary/75 leading-relaxed">
-          No, e anzi: il workshop è pensato esattamente per imprenditori e professionisti che <em>non</em> sono tecnici. Niente codice, niente gergo da informatico. Mostriamo strumenti che usi dal browser come una qualsiasi app.
-        </div>
+        <div class="px-5 pb-5 text-brand-primary/75 leading-relaxed">No. Il workshop è pensato proprio per imprenditori e professionisti che non hanno mai usato l'AI in modo serio. Se sai usare l'email, sei pronto.</div>
       </details>
 
-      <details class="group bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <summary class="flex items-center justify-between cursor-pointer p-5 lg:p-6 font-semibold text-lg list-none">
-          <span>Funziona anche per la mia attività?</span>
-          <span class="plus-icon text-brand-accent text-2xl font-light flex-shrink-0 ml-4">+</span>
+      <details class="group bg-slate-50 rounded-xl border border-brand-primary/10 overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-bold text-brand-primary list-none">
+          <span>E se non riesco a essere live una sera?</span>
+          <svg class="chev w-5 h-5 text-brand-secondary flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="px-5 lg:px-6 pb-5 lg:pb-6 text-brand-primary/75 leading-relaxed">
-          Se hai un'attività che produce documenti, gestisce clienti, fa marketing o eroga servizi — sì. Lavoriamo con artigiani, commercianti, studi professionali, agenzie, e-commerce, consulenti. I principi sono gli stessi, l'applicazione cambia.
-        </div>
+        <div class="px-5 pb-5 text-brand-primary/75 leading-relaxed">La replica è disponibile per 24 ore dopo ogni sessione. Detto questo, ti consigliamo davvero di esserci dal vivo: l'energia, le domande in chat e la Q&A finale fanno la differenza.</div>
       </details>
 
-      <details class="group bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <summary class="flex items-center justify-between cursor-pointer p-5 lg:p-6 font-semibold text-lg list-none">
-          <span>Devo essere presente in tutti e 4 i giorni?</span>
-          <span class="plus-icon text-brand-accent text-2xl font-light flex-shrink-0 ml-4">+</span>
+      <details class="group bg-slate-50 rounded-xl border border-brand-primary/10 overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-bold text-brand-primary list-none">
+          <span>Funziona anche per il mio settore?</span>
+          <svg class="chev w-5 h-5 text-brand-secondary flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="px-5 lg:px-6 pb-5 lg:pb-6 text-brand-primary/75 leading-relaxed">
-          Consigliamo fortemente la presenza live: ogni giornata costruisce sulla precedente, e il giorno 4 di Q&A è il valore aggiunto vero. Se salti una sessione, gli iscritti riceveranno comunque accesso alle registrazioni per un periodo limitato.
-        </div>
+        <div class="px-5 pb-5 text-brand-primary/75 leading-relaxed">Il metodo non è verticale su un settore: lavora sui processi (documenti, marketing, vendite, customer care). Ogni imprenditore o professionista che gestisce informazioni, clienti e contenuti — quindi praticamente tutti — ne trae vantaggio.</div>
       </details>
 
-      <details class="group bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <summary class="flex items-center justify-between cursor-pointer p-5 lg:p-6 font-semibold text-lg list-none">
-          <span>Su che piattaforma si svolge?</span>
-          <span class="plus-icon text-brand-accent text-2xl font-light flex-shrink-0 ml-4">+</span>
+      <details class="group bg-slate-50 rounded-xl border border-brand-primary/10 overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-bold text-brand-primary list-none">
+          <span>Quanto dura ogni sera?</span>
+          <svg class="chev w-5 h-5 text-brand-secondary flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="px-5 lg:px-6 pb-5 lg:pb-6 text-brand-primary/75 leading-relaxed">
-          100% online. Dopo l'iscrizione ricevi via email tutti i dettagli per collegarti — basta un computer (o anche solo lo smartphone) e una connessione stabile.
-        </div>
+        <div class="px-5 pb-5 text-brand-primary/75 leading-relaxed">Circa 90 minuti, dalle 21:00. Iniziamo puntuali e finiamo puntuali. Sappiamo che hai un'azienda da mandare avanti.</div>
       </details>
 
-      <details class="group bg-white rounded-xl border border-slate-200 overflow-hidden">
-        <summary class="flex items-center justify-between cursor-pointer p-5 lg:p-6 font-semibold text-lg list-none">
-          <span>Cosa succede dopo che mi iscrivo?</span>
-          <span class="plus-icon text-brand-accent text-2xl font-light flex-shrink-0 ml-4">+</span>
+      <details class="group bg-slate-50 rounded-xl border border-brand-primary/10 overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-bold text-brand-primary list-none">
+          <span>Cosa serve tecnicamente per partecipare?</span>
+          <svg class="chev w-5 h-5 text-brand-secondary flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="px-5 lg:px-6 pb-5 lg:pb-6 text-brand-primary/75 leading-relaxed">
-          Riceverai una email di conferma con il link al workshop e qualche promemoria nei giorni precedenti. Niente spam, niente catene di email. Ci vediamo il 15 giugno.
-        </div>
+        <div class="px-5 pb-5 text-brand-primary/75 leading-relaxed">Un computer (anche un tablet va bene), una connessione internet, e Zoom. Ti mandiamo il link di accesso via email subito dopo l'iscrizione.</div>
       </details>
     </div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
-<section class="bg-brand-primary text-white">
-  <div class="max-w-4xl mx-auto px-5 sm:px-8 py-16 lg:py-24 text-center">
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] mb-5">
-      4 giorni che possono cambiare come lavori per i prossimi 10 anni.
-    </h2>
-    <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
-      Posti live limitati a 1.000. Iscrizione gratuita ma seria: presentati pronto a prendere appunti.
-    </p>
-    <a href="#iscriviti" class="inline-flex items-center gap-2 bg-brand-secondary hover:bg-brand-accent transition text-brand-primary hover:text-white font-bold px-10 py-5 rounded-lg text-lg shadow-2xl">
-      Riserva il mio posto gratuito
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-    </a>
-    <p class="text-white/60 text-sm mt-5">15–18 Giugno 2026 · Online · Gratuito</p>
+<section class="py-16 sm:py-24 bg-slate-50">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
+    <div class="bg-white rounded-2xl border border-brand-primary/10 p-7 sm:p-10 shadow-xl">
+      <div class="text-center mb-6">
+        <p class="text-sm font-bold uppercase tracking-widest text-brand-secondary mb-3">Ultimo passo</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight mb-3">Iscriviti adesso. Ci vediamo il 15 giugno.</h2>
+        <p class="text-brand-primary/70">Compila i campi qui sotto. Ti arriva una mail con il link Zoom e tutti i promemoria.</p>
+      </div>
+
+      <!-- HubSpot form (verbatim, second instance) -->
+      <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "140603915",
+          formId: "1848f800-d265-4213-9ebd-90e0505b52dd",
+          region: "eu1"
+        });
+      </script>
+
+      <p class="text-center text-xs text-brand-primary/50 mt-6">
+        I tuoi dati sono al sicuro. Nessuno spam, mai.
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-brand-primary border-t border-white/10 text-white/60">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-8 text-center text-sm">
-    <p class="font-bold text-white mb-2">ImprenditorI.A.</p>
-    <p>© 2026 LMS · Tutti i diritti riservati</p>
+<footer class="bg-brand-primary text-white/70 py-10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+    <div class="font-bold text-white">ImprenditorI<span class="text-brand-secondary">.A.</span></div>
+    <div>© 2026 LMS · Tutti i diritti riservati</div>
   </div>
 </footer>
 
 <script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  // Smooth scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e){
       const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
     });
   });
 </script>
